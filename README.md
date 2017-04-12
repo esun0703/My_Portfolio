@@ -1,2 +1,2 @@
-# My_Portfolio
-Emily Sun Portfolio
+# Friend_Finder
+Friend Finder App

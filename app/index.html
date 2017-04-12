@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emily Sun Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js'></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <!--javascript file-->
+    <script type="text/javascript" src="js/js.js"></script>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <!--==================================== TITLE================================= -->
+    <div class="container" id="overlay">
+        <video class="visible-desktop" id="explosion-vid" autoplay loop muted>
+            <source type="video/webm" src="css/img/explosion.webm"></source>
+            <source type="video/mp4" src="css/img/explosion.mp4"></source>
+        </video>
+        <!-- <div id="state" class="visible-desktop"><span class="iconicfill-pause"></span></div> -->
+        <img id="explosion-pic" class="hidden-desktop" src="css/img/explosion.gif" alt="">
+        <a href="#modal1" id="modalBtn"><i class="small material-icons" id="menuIcon">reorder</i></a>
+        <div class="row" id="nameRow">
+            <div class="col s12">
+                <!-- <h6>HELLO, MY NAME IS</h6>
+        <h1 class="animated fadeInUp">EMILY<strong>&nbsp;SUN</strong></h1> -->
+                <img class="animated fadeIn" id="name" src="css/img/name.png">
+            </div>
+        </div>
+    </div>
+    <!--==================================== Modal Structure================================= -->
+    <!--  -->
+    <div id="modal1" class="modal">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right"><i class="large material-icons" >toc</i></a>
+        <!-- Modal Content -->
+        <div class="modal-content">
+            <ul>
+                <li>
+                    <a href="#aboutMeContainer" class=" modal-action modal-close">
+                    ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="#galleryContainer" class=" modal-action modal-close">
+                    WORK
+                    </a>
+                </li>
+                <li>
+                    <a href="#contactContainer" class=" modal-action modal-close">
+                    CONTACT
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--==================================== ABOUT ME================================= -->
+    <div class="container" id="aboutMeContainer">
+        <div class="row" id="introRow">
+            <div class="col s12" id="whoAmI">
+                <h2 class="pinkFont">Hello! I'm Emily Sun, </h2>
+                <img id="myImg" class="animated fadeIn floating-img" src="css/img/me.jpeg">
+                <h6>A fullstack javascript developer & UX designer.</h6>
+                <br>
+                <p>
+                    I enjoy building websites that are functional, while creating the best user experience and design. I like solving complex problems and unfolding simple solutions.
+                    <br>
+                    <br> I also love creating beautiful layouts and graphics using Photoshop, Illustrator, and Materialize with the elegant functionality of Javascript, Jquery, React, and Node.
+                    <br>
+                    <br> When I'm not coding or designing, you can see me curling up with a good book or weight lifting at my local gym.
+                    <br>
+                    <br>Checkout The Links Below:
+                </p>
+                <a href="https://www.linkedin.com/in/emilysun1" id="linkedIn"><img class="contactImg" src="css/img/linkedIn.png"></a>
+                <a href="https://github.com/esun0703" id="GitHub"><img class="contactImg" src="css/img/GitHub-Mark.png"></a>
+            </div>
+            <!-- <div class="col m6 s12" id="aboutMeColumn">
+                
+                
+                
+            </div> -->
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- ==================Gallery ===================-->
+    <!-- Work Gallery -->
+    <div class="container" id="galleryContainer">
+        <!--Row 1-->
+        <div class="row">
+            <!--Featured Item 1-->
+            <a href="https://trailblazer-rcb.herokuapp.com/">
+                <div class="col m4 s12 text-center thumbnail">
+                    <img class="thumb-img" src="css/img/1trailblazer.png">
+                    <div class="caption">
+                        <h6 class="tealFont thumb-head">Trailblazer</h6>
+                        <p>Frontend UX/UI Designer</p>
+                    </div>
+                </div>
+            </a>
+            <!--Featured Item 2-->
+            <a>
+                <div class="col m4 s12 text-center thumbnail">
+                    <img class="thumb-img" src="css/img/2pocketsensei.png">
+                    <div class="caption">
+                        <h6 class="tealFont thumb-head">Pocket Sensei</h6>
+                        <p>Backend Developer</p>
+                    </div>
+                </div>
+            </a>
+            <!--Featured Item 3-->
+            <a href="https://classic-rock-hangman.herokuapp.com" />
+            <div class="col m4 s12 text-center thumbnail">
+                <img class="thumb-img" src="css/img/3hangman.png">
+                <div class="caption">
+                    <h6 class="tealFont thumb-head">Classic Rock Hangman</h6>
+                    <p>Full Stack: Frontend & Backend Developer</p>
+                </div>
+            </div>
+            </a>
+        </div>
+        <!--Row 2-->
+        <div class="row">
+            <!--Featured Item 4-->
+            <a href="https://disney-trivia.herokuapp.com" />
+            <div class="col m4 s12 text-center thumbnail">
+                <img class="thumb-img" src="css/img/4disney.png">
+                <div class="caption">
+                    <h6 class="tealFont thumb-head">Disney Trivia</h6>
+                    <p>Full Stack: Frontend & Backend Developer</p>
+                </div>
+            </div>
+            </a>
+            <!--Featured Item 5-->
+            <a href="https://harry-potter-friend-finder.herokuapp.com" />
+            <div class="col m4 s12 text-center thumbnail">
+                <img class="thumb-img" src="css/img/5harry.jpg">
+                <div class="caption">
+                    <h6 class="tealFont thumb-head">Harry Potter Friend Finder</h6>
+                    <p>Full Stack: Frontend & Backend Developer</p>
+                </div>
+            </div>
+            </a>
+            <!--Featured Item 6-->
+            <a>
+                <div class="col m4 s12 text-center thumbnail">
+                    <img class="thumb-img" src="css/img/stock6.jpeg">
+                    <div class="caption">
+                        <h6 class="tealFont thumb-head">Art & Other Works</h6>
+                        <p>Click To See Miscellaneous Work</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- ==================Contact Me ===================-->
+    <div class="container" id="contactContainer">
+        <div class="row">
+            <div class="col m10 offset-m1 s12">
+                <h2 class="center-align tealFont">Let's Build Something!</h2>
+                <div class="row">
+                    <form class="col m8 offset-m2 s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="nameInput" type="text">
+                                <label for="nameInput">Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="email" type="email" class="form-input">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <textarea id="message" class="materialize-textarea"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col m12">
+                                <p class="right-align">
+                                    <button class="btn btn-small waves-effect waves-light" type="button" name="action">Send Message</button>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
