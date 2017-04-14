@@ -23,9 +23,9 @@
 
 <body>
     <!--==================================== TITLE================================= -->
-    <div class="container" id="overlay">
+    <div class="container-fluid" id="overlay">
         <video class="visible-desktop" id="explosion-vid" autoplay loop muted>
-            <source type="video/webm" src="css/img/explosion.webm"></source>
+            <source id="mp4" type="video/webm" src="css/img/explosion.webm"></source>
             <source type="video/mp4" src="css/img/explosion.mp4"></source>
         </video>
         <!-- <div id="state" class="visible-desktop"><span class="iconicfill-pause"></span></div> -->
@@ -39,8 +39,7 @@
             </div>
         </div>
     </div>
-    <!--==================================== Modal Structure================================= -->
-    <!--  -->
+    <!--======================= Modal Structure================================= -->
     <div id="modal1" class="modal">
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right"><i class="large material-icons" >toc</i></a>
         <!-- Modal Content -->
@@ -65,39 +64,34 @@
         </div>
     </div>
     <!--==================================== ABOUT ME================================= -->
-    <div class="container" id="aboutMeContainer">
+    <div class="container-fluid" id="aboutMeContainer">
         <div class="row" id="introRow">
-            <div class="col s12" id="whoAmI">
-                <h2 class="pinkFont">Hello! I'm Emily Sun, </h2>
-                <img id="myImg" class="animated fadeIn floating-img" src="css/img/me.jpeg">
-                <h6>A fullstack javascript developer & UX designer.</h6>
+            <div class="col m6 s12" id="whoAmI">
+                <h2 class="grayFont">WHO AM I? </h2>
+                <h6 class="grayFont">A Brief Summary</h6>
                 <br>
-                <p>
-                    I enjoy building websites that are functional, while creating the best user experience and design. I like solving complex problems and unfolding simple solutions.
+                <img id="myImg" class="animated fadeIn floating-img" src="css/img/me.jpeg">
+                <p class="grayFont" id="aboutMeParagraph">
+                    I'm a A fullstack javascript developer & UX designer who enjoys building websites that are functional, while creating the best user experience and design. I like solving complex problems and unfolding simple solutions.
                     <br>
                     <br> I also love creating beautiful layouts and graphics using Photoshop, Illustrator, and Materialize with the elegant functionality of Javascript, Jquery, React, and Node.
                     <br>
                     <br> When I'm not coding or designing, you can see me curling up with a good book or weight lifting at my local gym.
-                    <br>
-                    <br>Checkout The Links Below:
                 </p>
                 <a href="https://www.linkedin.com/in/emilysun1" id="linkedIn"><img class="contactImg" src="css/img/linkedIn.png"></a>
                 <a href="https://github.com/esun0703" id="GitHub"><img class="contactImg" src="css/img/GitHub-Mark.png"></a>
             </div>
-            <!-- <div class="col m6 s12" id="aboutMeColumn">
-                
-                
-                
-            </div> -->
+            <div id="skillsTitle" class="col m6 s12">
+                <h2 class="grayFont">MY SKILLS</h2>
+                <img id="skillsImage" class="animated fadeIn floating-img" src="css/img/skillsGraphic.png">
+            </div>
         </div>
-    </div>
-    </div>
     </div>
     <!-- ==================Gallery ===================-->
     <!-- Work Gallery -->
-    <div class="container" id="galleryContainer">
+    <div class="container-fluid" id="galleryContainer">
         <!--Row 1-->
-        <div class="row">
+        <div id="galleryRow" class="row">
             <!--Featured Item 1-->
             <a href="https://trailblazer-rcb.herokuapp.com/">
                 <div class="col m4 s12 text-center thumbnail">
@@ -109,7 +103,7 @@
                 </div>
             </a>
             <!--Featured Item 2-->
-            <a>
+            <a href="https://esun0703.github.io/PocketSensei/">
                 <div class="col m4 s12 text-center thumbnail">
                     <img class="thumb-img" src="css/img/2pocketsensei.png">
                     <div class="caption">
@@ -154,7 +148,7 @@
             <!--Featured Item 6-->
             <a>
                 <div class="col m4 s12 text-center thumbnail">
-                    <img class="thumb-img" src="css/img/stock6.jpeg">
+                    <img class="thumb-img" src="css/img/6randm.jpg">
                     <div class="caption">
                         <h6 class="tealFont thumb-head">Art & Other Works</h6>
                         <p>Click To See Miscellaneous Work</p>
@@ -164,7 +158,7 @@
         </div>
     </div>
     <!-- ==================Contact Me ===================-->
-    <div class="container" id="contactContainer">
+    <!-- <div class="container-fluid" id="contactContainer">
         <div class="row">
             <div class="col m10 offset-m1 s12">
                 <h2 class="center-align tealFont">Let's Build Something!</h2>
@@ -174,6 +168,10 @@
                             <div class="input-field col s12">
                                 <input id="nameInput" type="text">
                                 <label for="nameInput">Name</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <input id="nameInput" type="text">
+                                <label for="nameInput">Subject</label>
                             </div>
                             <div class="input-field col s12">
                                 <input id="email" type="email" class="form-input">
@@ -195,7 +193,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>

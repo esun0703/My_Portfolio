@@ -1,34 +1,35 @@
-@import url("//fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans");
-@import url("//www.weloveiconfonts.com/api/?family=iconicfill");
-[class*="iconicfill-"]::before {
-    font-family: "iconicfill", sans-serif;
-}
 
 html,
 body {
+    min-width: 100%;
+    padding:0;
+    margin:0;
     color: #fddaec;
     font-family: 'Poppins', sans-serif;
     font-size: 100%;
     height: 100%;
     line-height: 1.45;
+    overflow-x: hidden; 
 }
 
 .container {
-    padding: 0px;
-    margin: 0px;
+    padding: 0em;
+    margin: 0em;
     width: 100%;
-    position: relative;
+    /*position: relative;*/
+    /*overflow-x: hidden;*/
 }
 
 .row {
-    padding: 0px;
-    margin: 0px;
+    padding: 0em;
+    margin: 0em;
     width: 100%;
+   /* overflow-x: hidden;*/
 }
 
 .col.s4 {
-    padding: 0;
-    margin: 0;
+    padding: 0em;
+    margin: 0em;
 }
 
 
@@ -52,7 +53,6 @@ body {
     top: 0;
     transition: background-color 300ms ease;
     width: 100%;
-    overflow: hidden;
 }
 
 .fade {
@@ -68,12 +68,17 @@ body {
     background-size: cover;
     top: 0;
     height: 100%;
-    width: 100%;
     perspective: 1000;
     position: fixed;
     right: 5%;
     width: auto;
+    /*max-width:70%;*/
     z-index: -1;
+    overflow-x:hidden;
+}
+
+#mp4{
+    width:100%;
 }
 
 #explosion-pic {
@@ -126,78 +131,97 @@ h4 {
 h2{
   font-weight:bold;
 }
+.grayFont{
+    color:#808084;
+}
+
 
 #introRow {
+    width:100%;
     margin-top: 10px;
-    margin-bottom: 20px;
-    padding-left: 70px;
+    padding-left: 100px;
     padding-top: 30px;
+    padding-bottom:20px;
     color: #6e0bbf;
 }
 
 .pinkFont {
  color: #ff00fa;
- font-weight:bold;
+ font-weight:black;
 }
 
+#myImg {
+    margin-top:17px;
+    margin-right: 15px;
+    width: 50%;
+    float:left;
+    /*border: 2px solid #fc9b25;*/
+}
 
+#aboutMeParagraph{
+    font-size:16px;
+}
 
 #whoAmI {
-    height: auto;
+    width:50%;
+    /*height: auto;*/
     max-height:650px;
     margin-bottom: 40px;
-    text-align: left;
+    text-align: justify;
+    /*clear:both;*/
+   /* margin-right:65px;*/
 }
 
 #whoAmI h3 {
     font-family: 'Lato', sans-serif;
+    font-weight:bold;
+    
 }
+
+
 
 #aboutMeContainer {
+    width:100%;
     background-color: #151515;
     /*padding:2em;*/
-    position: relative;
     z-index: 1;
     width: 100%;
-    max-height:650px;
-    padding: 30px;
-    padding-bottom: 50px;
+    height:auto;
+    min-height:650px;
+    padding-top:40px;
+    padding-bottom:60px;
 }
 
-#myImg {
-    margin: 10px;
-    width: 400px;
-    border-radius: 50%;
-}
 
-#aboutMeColumn {
-    padding: 0;
-    margin: 0;
-    /*margin-top:140px;*/
-    margin-left: 30px;
-    width: 40%;
-}
 
-.floating-img {
-    float: right;
-    /*margin: 0px 10px 0 0; */
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    -webkit-shape-outside: circle();
-    shape-outside: circle(50%);
-}
 
 .contactImg {
     width: 30px;
     height: 30px;
     margin-left: 10px;
+    
 }
 
+#skillsImage{
+    width:470px;
+    height:470px;
+}
 
-/*#aboutMeContainer.col.m6.s12{
-  width:30%;
-}*/
+#skillsTitle{
+    padding:10px;
+    width:50%;
+     
+}
+
+#skillsTitle h4{
+    font-size:30px;
+}
+
+#hobbiesImage {
+
+    width:400px;
+}
+
 
 
 /*================================Gallery================*/
@@ -209,15 +233,21 @@ h2{
 }
 
 #galleryContainer {
+    
     background-color: #ffffff;
-    padding: 0px;
-    margin: 0px;
+    padding: 0em;
+    margin: 0em;
     width: 100%;
     height: auto;
+
 }
 
 #galleryContainer a {
     color: white;
+}
+
+#galleryRow{
+    width:100%;
 }
 
 
@@ -335,6 +365,8 @@ h6 {
 /*=========================CONTACT  Styling=======================*/
 
 #contactContainer {
+    width:100%;
+    margin:0;
     background-color: #151515;
     padding-top: 70px;
     padding-bottom: 40px;
